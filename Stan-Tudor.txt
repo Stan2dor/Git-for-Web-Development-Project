@@ -24,7 +24,7 @@ The <head> element is a container for metadata that typically defines the docume
 The id attribute specifies a unique id for an HTML element.
 
     8. What elements can I add an id to? 
-The id attribute to an HTML element.
+The id attributes to an HTML element.
 
     9. How many times can I use the same id on a page? 
 Once
@@ -45,38 +45,94 @@ Set the target attribute to _blank
 The alt attribute provides alternative information for an image if a user for some reason cannot view it.
 
     15. How do I reference an id?
+The syntax for id is a hash character (#), followed by an id name.
 
     16. What is the difference between a section and a div
+The <section> tag creates independent sections within a webpage having logically connected content. And the <div> tag is an empty container specifying a division or a section.
+
     17. What is CSS used for? 
+CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.
+
     18. How to we select an element? Example - every h2 on the page
+h2 { }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+
     20. How do we select classes in CSS?
+Select elements with a specific class, write a period (.) character, followed by the name of the class.
+
     21. How do we select a p element with a single class of “human””?
+p.human { }
+
     22. What is a parent child selector? When would this be useful? 
+parent > child (both elements must be selectors)
+By chaining child selectors together, it's possible to target certain elements at certain points in the document.
+    
     23. How do you select all links within a div with the class of sidebar?
+$('#sidebar a[href]')
+
     24. What is a pseudo selector?
-    25. What do we use the change the spacing between lines?
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+    
+    25. What do we use to change the spacing between lines?
+The line-height property specifies the height of a line.
+    
     26. What do we use to change the spacing between letters?
+The letter-spacing Defines the spacing between the characters of a block of text.
+    
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+The text-transform property controls the capitalization of text.
+    
     28. How do I add a 1px border around my div that is dotted and black?
+#myDiv {border: dotted black}
+    
     29. How do I select everything on the page? 
+The * selector selects all elements. 
+    
     30. How do I write a comment in CSS?
+A CSS comment is placed inside the <style> element, and starts with /* and ends with */ 
+    
     31. How do I find out what file I am in, when I am using the command line? 
+Using the "ls" command
+    
     32. Using the command line - how do I see a list of files/folders in my current folder?
+The -a (all) and -l (long format) options display all of the files.
+    
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+use rm (remove) to delete. You won't be prompted before deleting the file. You could easily lose a lot of work!
+    
     34. Why should I use version control? 
+It makes it easy to stage changes and revert back to a specific version easily.
+    
     35. How often should I commit to github?
+Whenever you add a new feature that's worth commiting, commit. There's nothing wrong commiting small changes, as soon as the commit is relevant.
+    
     36. What is the command we would use to push our repo up to github? 
+git push -u origin branch-name
+    
     37. Walk me through Lambda's git flow. 
+fork -> copy link -> VS Code Terminal -> git clone -> cd -> git checkout -b => Assiggnment -> git add . -> git commit -m "notes" -> git push origin -u branch-name => Submit pull request
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+A: Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+A Block-level element occupies the entire horizontal space of its parent element (container), and vertical space equal to the height of its contents, thereby creating a "block". 
+    
     2. What happens when an element is positioned absolutely? 
+A: The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any.
+    
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+ A: Using Flexbox 
+    
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+A: block by default: <p>, <h1>, <section> inline by default: <a>, <img>, <button> inline-block: <nav>
+    
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+A: The CSS box model is the set of rules that decides how a CSS element’s sizes are computed as you add padding, borders, and margins around the content.
+The Fix: box-sizing: border-box.
 
 
    --> 
